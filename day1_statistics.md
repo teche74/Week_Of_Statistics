@@ -179,3 +179,75 @@ The standard deviation reflects the dispersion of the distribution. The curve wi
 <center>
 <image src ="https://github.com/teche74/Week_Of_Statistics/assets/129526047/1fb5f7c0-4ce8-4ceb-9b34-953abc8c1b6b">
 </center> 
+
+
+## Variables
+
+- It is a property that can take on any value.
+ `example : ` Height, Weight etc.
+
+#### **Kinds of Variable**
+
+- `Quantitative Variable` : Variables which can be measured numerically. We can Perform mathematical operations in it .
+	- Example : Age, Weight etc. 
+
+- `Qualitative Variable`: Variables can be defined based on categories. We cannot perform any kind of mathematical operations in it . 
+	-  Example :  Gender, Age Group, Blood group.
+
+<image src ="https://images.ctfassets.net/dkgr2j75jrom/A6Xf1MfISZhiQWuyGFDpV/7ee6b8f5538a321e4edbe23b87556064/PillarPage-Qual-Quan__2_-min.png?w=750&h=383&q=50&fm=png">
+
+```R
+# Quantitative Variable
+Age <- c(10,18,22,32,2,36,61,74)
+
+# We can  perform operations 
+mean(Age);
+median(Age);
+sd(Age);
+quantiles(Age);
+
+
+# Qualitative Variable
+Flowers = c("Rose","Lily","Rose","Marigold","Marigold","Rose","Tulip")
+
+# We cannot find mean, median here 
+
+# We can generate Frequency distribution.
+table(Flowers)
+
+# We can create  Barcharts.
+Barplot(Flowers)
+```
+
+
+#### **Variable Measurment Scales**
+
+- There are 4 types of measurement scales :
+	- Ordinal.
+	- Nominal.
+	- Interval.
+	- Ratio.
+
+
+##### `Nominal`
+	 -  Split into classes and categories.
+	 -  Example : Color, Grades, Flower Types etc.  
+![enter image description here](http://intellspot.com/wp-content/uploads/2017/09/Examples-of-Nominal-Data-short-infographic.png)
+
+##### `Ordinal`
+	- Order of data matters but value doesnot.
+	- Example : Students ranking.
+![enter image description here](https://github.com/teche74/Week_Of_Statistics/assets/129526047/f648ff6a-8749-411a-9b71-6e2de1f62021)
+
+##### `Interval`
+	- Order of data matters, value also matters, but natural zero is not present.
+	- Example : Temprature, Distance.
+![enter image description here](https://imgs.search.brave.com/rp6XZFqk5JAI7rdX1FXo8Oe1T8x9ALFVQ51ZWEorqUQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9oZWxw/ZnVscHJvZmVzc29y/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wOC9pbnRl/cnZhbC12YXJpYWJs/ZS1leGFtcGxlcy1h/bmQtZGVmaW5pdGlv/bi0xMDI0eDcyNC5q/cGc)
+
+##### `Ratio`
+	- Order of data matters, value also matters and natural zero is also present.
+	- Example : Speed, Height, No of times a person do workout in a week.
+
+### Conclusion
+
+![enter image description here](https://d3mm2s9r15iqcv.cloudfront.net/en/wp-content/uploads/old-blog-uploads/four-levels-of-measurement-data.jpg)
