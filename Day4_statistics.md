@@ -1,3 +1,4 @@
+
 ------------------
 DAY4 - STATISTICS
 ------------
@@ -165,3 +166,83 @@ notch = TRUE
 -   **Cumulative Distribution Function (CDF):** Cumulative probability of a random variable up to a certain point.
 
 
+## Common Probability Distributions
+
+### Bernoulli Distribution
+
+-   Represents two possible outcomes (success/failure) with probabilities p and 1−p.
+
+```R
+library(ggplot2)
+
+p_success <- 0.3
+data_bernoulli <- rbinom(1000, 1, p_success)
+ggplot(data.frame(outcome = factor(data_bernoulli)), aes(x = outcome)) +
+  geom_bar(fill = "skyblue", color = "black") +
+  labs(title = "Bernoulli Distribution",
+       x = "Outcome (Success/Failure)",
+       y = "Frequency")
+```
+<center>
+<image src = "https://github.com/teche74/Week_Of_Statistics/assets/129526047/92f622fd-c8bd-4633-85a6-3f510a45739e">
+</center>
+
+### Binomial Distribution
+
+-   Represents the number of successes in a fixed number of independent Bernoulli trials.
+
+```R
+# 10 trials with probability of success 0.5
+n_trials <- 10
+p_success <- 0.5
+
+# data from Binomial distribution
+data_binomial <- rbinom(1000, n_trials, p_success)
+
+#  histogram
+ggplot(data.frame(outcome = data_binomial), aes(x = outcome)) +
+  geom_histogram(binwidth = 1, fill = "lightgreen", color = "black") +
+  labs(title = "Binomial Distribution",
+       x = "Number of Successes",
+       y = "Frequency")
+``` 
+<center>
+<image src = "https://github.com/teche74/Week_Of_Statistics/assets/129526047/e95fd339-7471-42f1-aa73-f508c7f65f67">
+</center>
+
+### Normal Distribution
+
+-   Symmetric distribution with a bell-shaped curve.
+
+```R
+# mean = 0 and standard deviation = 1
+data_normal <- rnorm(1000, mean = 0, sd = 1)
+
+# histogram
+ggplot(data.frame(value = data_normal), aes(x = value)) +
+  geom_histogram(binwidth = 0.2, fill = "salmon", color = "black") +
+  labs(title = "Normal Distribution",
+       x = "Value",
+       y = "Frequency") +
+  theme_minimal()
+```
+<center>
+<image src = "https://github.com/teche74/Week_Of_Statistics/assets/129526047/df28d48a-079d-4816-b78b-4cfc19fdace3">
+</center>
+
+## 6. Hypothesis Testing
+
+### Null and Alternative Hypotheses
+
+-   **Null Hypothesis (H0):** A statement to be tested.
+-   **Alternative Hypothesis (H1​) :** The hypothesis we want to support.
+
+### Type I and Type II Errors
+
+-   **Type I Error:** Rejecting a true null hypothesis.
+-   **Type II Error:** Failing to reject a false null hypothesis.
+
+### Significance Level and P-Value
+
+-   **Significance Level (α):** The probability of committing a Type I Error.
+-   **P-Value:** The probability of obtaining results as extreme as the observed results, assuming the null hypothesis is true.
