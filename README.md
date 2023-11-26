@@ -1,48 +1,50 @@
-# 📊 Data Alchemy: Unveiling Hidden Insights with R Magic 🪄
+# Week of Statistics
 
-Welcome to the enchanting world of "Data Alchemy"! In this mystical repository, we will harness the art of statistical analysis with the magical powers of R programming. Unravel the secrets hidden within your data, transform them into valuable insights, and embark on a spellbinding journey through the realms of statistics.
+This repository contains materials and code related to a week-long study of statistics. The content covers fundamental concepts in statistics, including descriptive statistics, inferential statistics, and various statistical techniques. The content is organized into daily sessions.
 
-<image src = "https://preview.redd.it/middleagesoftwaredevelopmentbelike-v0-uczu75l5vivb1.jpg?width=640&crop=smart&auto=webp&s=b4d817b686459ded4bd657b97b332500f2c9f807" width=1000>
+## Table of Contents
 
-## 🪄 What is Data Alchemy?
+- [Day 1: Introduction to Statistics](#day-1-introduction-to-statistics)
+- [Day 2: Measures of Central Tendency and Dispersion](#day-2-measures-of-central-tendency-and-dispersion)
+- [Day 3: Distributions and Normal Distribution](#day-3-distributions-and-normal-distribution)
+- [Day 4: Outliers Detection](#day-4-outliers-detection)
 
-Data Alchemy is the art of turning raw data into gold—insights, predictions, and knowledge. And R, our trusty spellbook, is the wand we'll wield to perform these alchemical experiments. Here, we don't just crunch numbers; we conjure stories, weave spells, and create enchanting visualizations.
+## Day 1: Introduction to Statistics
 
-## 🌟 Magical Components
+- Definition of Statistics
+- Types of Statistics: Descriptive and Inferential
+- Descriptive Statistics:
+  - Measures of Central Tendency (Mean, Median, Mode)
+  - Measures of Variance (Standard Deviation, Variance, Range, Interquartile Range)
+- Population and Samples
+- Sampling Techniques
+- Types of Variables
 
-Our magical repository is brimming with powerful ingredients:
+## Day 2: Measures of Central Tendency and Dispersion
 
-- **Spellbinding Scripts**: Ancient scrolls (R scripts) filled with incantations to conduct various statistical analyses.
+- Impact of Outliers on Mean, Median, and Mode
+- Experiment with Outliers
+- Percentiles and Quartiles
+- Five-Number Summary
+- Boxplots for Outliers Detection
 
-- **Enchanted Notebooks**: Journals of wisdom (Jupyter notebooks and R Markdown files) filled with explanations and examples for mastering the arcane arts of R.
+## Day 3: Distributions and Normal Distribution
 
-- **Potent Potions**: Sample datasets, the essence of alchemy, to practice your spells.
+- Understanding Normal Distribution
+- Properties of Normal Distributions
+- Empirical Rule
+- Standard Normal Distribution
+- Calculating Z-Scores
+- Using Z-Scores for Standardization
+- Example: Finding Percentiles
 
-- **Artifacts and Visualizations**: Mystical graphs and visual representations that reveal the hidden truths.
+## Day 4: Outliers Detection
 
-- **Spellbooks (Tutorials)**: Comprehensive guides to mastering the art of Data Alchemy.
+- Identifying Outliers Using 3rd Standard Deviation
+- Adding Outliers to Data
+- Function for Outliers Detection
 
-- **Codex of Knowledge**: References, cheat sheets, and ancient scrolls to deepen your understanding.
+## Usage
 
-## 🧙‍♂️ Casting Spells
-
-To embark on your own magical journey:
-
-1. **Prepare Your Cauldron**: Make sure you have R and RStudio installed. Download R from [here](https://cran.r-project.org/) and RStudio from [this link](https://www.rstudio.com/).
-
-2. **Brew Your Potions**: Clone this repository to your magical workstation.
-
-3. **Open the Grimoire (Code Section)**: Explore the magical resources within. Consult the specific spells and datasets that intrigue you.
-
-## ✨ Contribute to the Coven
-
-Our magical coven welcomes new members and spells. If you have discovered new incantations, wish to correct potion recipes, or have powerful artifacts to share, join our coven by contributing. Check the [Contributing](CONTRIBUTING.md) guidelines to learn how to become a fellow sorcerer.
-
-## 📜 License
-
-This repository is governed by the sacred rules of the [MIT License](LICENSE). You are free to use, adapt, and distribute the magical knowledge within, as long as you adhere to these sacred laws.
-
-Unleash your inner wizard, embark on your quest for knowledge, and may your data alchemy journey be filled with success and enchantment!
-
-![image](https://github.com/teche74/STATISTICS_WITH_R/assets/129526047/7a3b351c-32d3-499e-b19d-dcb441600a4f)
+Feel free to use the provided R code and examples for learning or teaching statistics. Each day's content is organized in separate R scripts for clarity.
 
